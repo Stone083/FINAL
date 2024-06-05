@@ -1,0 +1,76 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 20%;
+  height: 40px;
+  /* 调整按钮的内间距 */
+  font-size: 12px;
+  /* 调整按钮字体大小 */
+  background-color: #555;
+  /* 按钮背景色 */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.left {
+  height: 100vh;
+  background-color: #000;
+  /* background-color: #bdd1ec; */
+}
+
+
+.right {
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right a {
+  color: #4a4a80;
+}
+
+@media (max-width: 576px) {
+
+  /* 當螢幕寬度小於等於 576px (sm) 時，圖片高度為螢幕的一半 */
+  .left {
+    height: 30vh;
+    background-color: #000;
+  }
+
+  .right {
+    height: 100vh;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.right img {
+  width: 40%;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #f2f2f2;
+}
+
+
+.submit:hover {
+  background-color: #303061;
+}
