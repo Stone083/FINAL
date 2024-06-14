@@ -70,6 +70,10 @@ nav li {
 	text-align: center;
 }
 
+.carousel-item>img{
+	height: 500px;
+}
+
 #intro .jumbotron {
 	/* background-image: url("../image/拉菲1998.png"); */
 	background-color: #444141;
