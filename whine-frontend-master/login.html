@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		<script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="stylesheet" href="css/login.css">
-		<title>Phoneone-Login</title>
-		
-	</head>
-  <body>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Whine-Login</title>
+</head>
+<body>
     <div class="container-fluid">
-      <div class="row">
-        <div class="col-sm-6 col-xs-12 p-0">
-          <div class="left">
-          </div>
-        </div>
-        <div class="col-sm-6 col-xs-12 text-center p-0">
-          <div class="right align-items-center d-flex">
-            <div class="column">
-              <img src="image/LOGO.png" alt="logo">
-              <h2>會員登入 LOGIN</h2>
-              <form action="login" method="post">
-                    <input type="text" name="username" placeholder="請輸入帳號" required>
-                    <input type="password" name="password" placeholder="請輸入密碼" required>
-                    <div class="button-container">
-                        <button type="submit" class="login-button">登入</button>
-                    </div>
-                </form>
-              <div class="row justify-content-center ">
-                  <p style="font-size: 15px;">還沒有帳號嗎？</p>
-                  <a style="font-size: 15px; color: #f05f5c;" href="register.html">點擊註冊</a>
-              </div>
+        <div class="row">
+            <div class="col-sm-6 col-xs-12 p-0">
+                <div class="left"></div>
             </div>
-          </div>
+            <div class="col-sm-6 col-xs-12 text-center p-0">
+                <div class="right align-items-center d-flex">
+                    <div class="column">
+                        <img src="image/LOGO.png" alt="logo">
+                        <h2>會員登入 LOGIN</h2>
+                        <form id="loginForm" action="login" method="post">
+                            <input type="text" name="username" placeholder="請輸入帳號" required>
+                            <input type="password" name="password" placeholder="請輸入密碼" required>
+                            <div class="button-container">
+                                <button type="submit" class="login-button">登入</button>
+                            </div>
+                        </form>
+                        <div class="row justify-content-center">
+                            <p style="font-size: 15px;">還沒有帳號嗎？</p>
+                            <a style="font-size: 15px; color: #f05f5c;" href="register.html">點擊註冊</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </body>
 
-  <script>
-    function handleLogin(event) {
-      event.preventDefault(); 
-      var email = document.getElementsByName("email")[0].value;
-      var password = document.getElementsByName("password")[0].value;
-  
-      var name = "PhoneOne"; 
-      window.location.href = "index.html?name=" + encodeURIComponent(name);
-    }
-  
-    var loginForm = document.getElementById("loginForm");
-    loginForm.addEventListener("submit", handleLogin);
-  </script>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); 
+            var username = document.getElementsByName("username")[0].value;
+            var password = document.getElementsByName("password")[0].value;
+            
+            // 模擬檢查帳號密碼（這裡你可以加入實際的驗證邏輯）
+            var name = "admin"; 
+            window.location.href = "index.html?name=" + encodeURIComponent(name);
+        }
+        
+        document.getElementById("loginForm").addEventListener("submit", handleLogin);
+    </script>
+</body>
 </html>
