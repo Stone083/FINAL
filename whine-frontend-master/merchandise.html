@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<script src="https://kit.fontawesome.com/68f8681dba.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>商品详情</title>
     <link rel="stylesheet" href="css/style2.css">
     <link rel="stylesheet" href="css/merchandise.css">
 </head>
 <body>
     <header>
-        <div class='container'>
-            <nav class="navbar navbar-expand-md navbar-light fixed-top header-color">
-                <a class="navbar-brand" href="index.html"><img src='image/LOGO.png' width='100'></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link nav-text" href="index.html" id="backToIndex"></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+        <div class='container' style="background-color: #333;">
+          <nav class="navbar navbar-expand-md navbar-light fixed-top header-color">
+            <a class="navbar-brand" href="index.html"><img src='image/LOGO.png' width='100'></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link nav-text" href="index.html" id="backToIndex" style="color: #fff;">回首頁</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
     </header>
     <main>
@@ -37,19 +44,19 @@
                     <div class="product-details">
                         <div class="section-title">商品詳情</div>
                         <div class="product-info">
-                            <strong>商品內容：</strong>
-                            <span>拉菲紅酒1998年份一瓶</span>
+                            <strong>商品內容</strong>
+                            <span style="color: #1b1b1b;">拉菲紅酒1998年份一瓶</span>
                         </div>
                         <div class="product-info">
-                            <strong>商品介紹：</strong>
-                            <span>
+                            <strong>商品介紹</strong>
+                            <span style="color: #1b1b1b;">
                                 口感順滑，單寧豐富，酒體豐滿，有濃鬱的水果香氣。
                             </span>
                         </div>
     
-                        <strong>數量：</strong>
+                        <div style="color: black;">數量</div>
                         <div class="count-button"><input type="number" value="1"></div>
-                        <strong>庫存：10</strong>
+                        <div style="color: black;">庫存:10</div>
                         <div class="product-buy">
                             <a href="#" class="buy-button">購買</a>
                             <a href="cart.html" class="buy-button">加入購物車</a>
@@ -59,8 +66,8 @@
             </div>
         </section>
     </main>
-    <footer>
-        <p>版权所有 &copy; 2024</p>
+    <footer style="background-color: #333;">
+        <p>2024 酒水專賣店. All rights reserved.</p>
     </footer>
 </body>
 </html>

@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #000;
+    background-color: #333;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -137,7 +137,7 @@ main {
 }
 
 .product-item h3 {
-    color: #ff4c4c;
+    color: #fcdddd;
     margin: 0.5em 0;
 }
 
